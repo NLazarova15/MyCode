@@ -3,7 +3,8 @@
 # The user now will have 5 tries to guess.
 
 i=1
-while i <=5:
+# while i <=5:  # while variant
+for i in range(1,6):
     # user input
     user_guess=int(input("Insert your gess from 1 to 10:  "))
     # mashine number
@@ -21,6 +22,6 @@ while i <=5:
         
     else:
         print("Your guess is out of range")
-    i=i+1
+    # i=i+1    # while variant
 if user_guess!=machine_number:
     print("You Loss! My number was " f'{machine_number}')
